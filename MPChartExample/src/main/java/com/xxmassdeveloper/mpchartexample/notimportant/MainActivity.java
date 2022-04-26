@@ -45,6 +45,7 @@ import com.xxmassdeveloper.mpchartexample.ScatterChartActivity;
 import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
+import com.xxmassdeveloper.mpchartexample.mytest.TestPieChartActivity;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
 
 import java.util.ArrayList;
@@ -123,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         objects.add(36, new ContentItem("Realtime", "Add data points in realtime."));
         objects.add(37, new ContentItem("Hourly", "Uses the current time to add a data point for each hour."));
         //objects.add(38, new ContentItem("Realm.io Examples", "See more examples that use Realm.io mobile database."));
+
+        objects.add(38, new ContentItem("MyChartTest"));
+        objects.add(39, new ContentItem("TestPie", "Ensure VlueLine not overlay"));
 
         MyAdapter adapter = new MyAdapter(this, objects);
 
@@ -237,6 +241,9 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
             /*case 38:
                 i = new Intent(this, RealmMainActivity.class);
                 break;*/
+            case 39:
+                i=new Intent(this, TestPieChartActivity.class);
+                break;
         }
 
         if (i != null) startActivity(i);

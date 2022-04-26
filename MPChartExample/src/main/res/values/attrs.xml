@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MPAndroidChartUtil">
+        <!--<attr name="mp_chart_util_top_align" format="boolean"/>-->
+        <attr name="mp_chart_out_value_place_mode" format="enum">
+            <!--左右等分可用空间，推荐用这个模式，默认也是这个模式-->
+            <enum name="AVG" value="1"/>
+            <!--右侧上对齐，右侧下面可能会被挤出去；左侧下对齐，左侧上面可能会被挤出去-->
+            <enum name="Simple" value="2"/>
+        </attr>
+        <!--在AVG模式下，如果数据过多产生重叠，是否自动减小字体大小-->
+        <attr name="mp_chart_auto_adapt_text_size" format="boolean"/>
+    </declare-styleable>
+</resources>

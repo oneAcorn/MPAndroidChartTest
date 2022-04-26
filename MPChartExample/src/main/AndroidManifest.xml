@@ -27,6 +27,7 @@
         <activity android:name="HorizontalBarNegativeChartActivity" />
         <activity android:name="PieChartActivity" />
         <activity android:name="PiePolylineChartActivity" />
+        <activity android:name=".mytest.TestPieChartActivity" />
         <activity android:name="MultiLineChartActivity" />
         <activity android:name="BarChartActivityMultiDataset" />
         <activity android:name="DrawChartActivity" />
