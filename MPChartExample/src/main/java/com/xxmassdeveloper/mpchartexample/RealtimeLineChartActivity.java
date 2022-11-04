@@ -58,7 +58,7 @@ public class RealtimeLineChartActivity extends DemoBase implements
         chart.setDrawGridBackground(false);
 
         // if disabled, scaling can be done on x- and y-axis separately
-        chart.setPinchZoom(true);
+        chart.setPinchZoom(false);
 
         // set an alternative background color
         chart.setBackgroundColor(Color.LTGRAY);

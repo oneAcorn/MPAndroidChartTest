@@ -45,6 +45,7 @@ import com.xxmassdeveloper.mpchartexample.ScatterChartActivity;
 import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
+import com.xxmassdeveloper.mpchartexample.mytest.TestLineChartActivity;
 import com.xxmassdeveloper.mpchartexample.mytest.TestPieChartActivity;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
 
@@ -127,6 +128,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
         objects.add(38, new ContentItem("MyChartTest"));
         objects.add(39, new ContentItem("TestPie", "Ensure VlueLine not overlay"));
+        objects.add(40,new ContentItem("TestLine",""));
 
         MyAdapter adapter = new MyAdapter(this, objects);
 
@@ -242,7 +244,10 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 i = new Intent(this, RealmMainActivity.class);
                 break;*/
             case 39:
-                i=new Intent(this, TestPieChartActivity.class);
+                i = new Intent(this, TestPieChartActivity.class);
+                break;
+            case 40:
+                i = new Intent(this, TestLineChartActivity.class);
                 break;
         }
 

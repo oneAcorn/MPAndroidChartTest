@@ -81,9 +81,13 @@ public class PerformanceLineChart extends DemoBase implements OnSeekBarChangeLis
         LineDataSet set1 = new LineDataSet(values, "DataSet 1");
 
         set1.setColor(Color.BLACK);
+
         set1.setLineWidth(0.5f);
         set1.setDrawValues(false);
-        set1.setDrawCircles(false);
+//        set1.setDrawCircles(false);
+        set1.setCircleColor(Color.WHITE);
+        set1.setCircleRadius(4f);
+        set1.setDrawCircles(true);
         set1.setMode(LineDataSet.Mode.LINEAR);
         set1.setDrawFilled(false);
 
