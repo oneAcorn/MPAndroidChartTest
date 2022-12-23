@@ -45,6 +45,7 @@ import com.xxmassdeveloper.mpchartexample.ScatterChartActivity;
 import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
+import com.xxmassdeveloper.mpchartexample.mytest.TestCombinedActivity;
 import com.xxmassdeveloper.mpchartexample.mytest.TestLineChartActivity;
 import com.xxmassdeveloper.mpchartexample.mytest.TestPieChartActivity;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
@@ -128,7 +129,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
         objects.add(38, new ContentItem("MyChartTest"));
         objects.add(39, new ContentItem("TestPie", "Ensure VlueLine not overlay"));
-        objects.add(40,new ContentItem("TestLine",""));
+        objects.add(40, new ContentItem("TestLine", ""));
+        objects.add(41, new ContentItem("TestCombineChart", ""));
 
         MyAdapter adapter = new MyAdapter(this, objects);
 
@@ -248,6 +250,9 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 break;
             case 40:
                 i = new Intent(this, TestLineChartActivity.class);
+                break;
+            case 41:
+                i = new Intent(this, TestCombinedActivity.class);
                 break;
         }
 
